@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 11rem;
 
   &__top {
     display: flex;
@@ -22,11 +21,10 @@
 }
 
 .logo {
-  width: 20rem;
-  height: 8rem;
+  width: 15rem;
+  height: 4rem;
 
   &__img {
-    padding: 1rem;
   }
 }
 
@@ -40,11 +38,11 @@
 
 .theme-toggle {
   margin-left: auto; // Ну тут я скорее всего нарушил БЭМ потому что задал внешнюю геометрию, но не знаю как по другому это сделать, чтобы выглядело красиво
-  margin-right: 1rem;
 }
 
 .search-container {
   padding: 1rem;
+  width: 12rem;
 }
 
 .navigation-history {
@@ -61,6 +59,7 @@
 
 .search-form {
   &__input {
+    width: 8rem;
     border-radius: 3rem;
     padding: 0.3rem 0.7rem 0.3rem 0.7rem;
   }
