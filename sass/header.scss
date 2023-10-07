@@ -1,0 +1,67 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 11rem;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: $color-bg-light;
+    padding: 0.5rem 0.3rem;
+  }
+}
+
+.logo {
+  width: 20rem;
+  height: 8rem;
+
+  &__img {
+    padding: 1rem;
+  }
+}
+
+.top-navigation {
+  &__list {
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+  }
+}
+
+.theme-toggle {
+  margin-left: auto; // Ну тут я скорее всего нарушил БЭМ потому что задал внешнюю геометрию, но не знаю как по другому это сделать, чтобы выглядело красиво
+  margin-right: 1rem;
+}
+
+.search-container {
+  padding: 1rem;
+}
+
+.navigation-history {
+  &__list {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+.language-button {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.search-form {
+  &__input {
+    border-radius: 3rem;
+    padding: 0.3rem 0.7rem 0.3rem 0.7rem;
+  }
+}
