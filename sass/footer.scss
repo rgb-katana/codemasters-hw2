@@ -3,6 +3,9 @@
   grid-template-columns: 25rem 1fr 1fr 1fr;
   row-gap: 0.5rem;
   grid-template-rows: 1fr auto;
+  /*
+   Я бы советовал использовать css переменные вместо scss. Использование scss переменных оправдано в том случае, если значение используется только внутри 1 файла, чтобы избежать копипасту
+   https://www.google.com/search?sca_esv=571963393&sxsrf=AM9HkKmXmSoWWaHHysJ-4gpQFkliwYfPJQ:1696874970159&q=%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%B8%D0%B5+css+%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D1%85+%D0%BE%D1%82+sass&sa=X&ved=2ahUKEwiAiMzux-mBAxXqHBAIHU2YAn4Q7xYoAHoECA0QAQ&biw=2048&bih=1033&dpr=1.25#ip=1*/
   background-color: $color-bg-light;
   padding: 0.5rem 1rem 0.5rem 1rem;
 
