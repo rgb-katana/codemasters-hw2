@@ -9,30 +9,29 @@
   &__icon {
     margin-right: 0.5rem;
   }
-}
 
-/*Тут следует использовать вложенность, раз уж начал */
-.sidebar__input {
-  border-radius: 3rem;
-  padding: 0.3rem 0.7rem 0.3rem 0.7rem;
-}
+  &__input {
+    border-radius: 3rem;
+    padding: 0.3rem 0.7rem 0.3rem 0.7rem;
+  }
 
-.sidebar__nav {
-  margin-top: 3rem;
-}
+  &__nav {
+    margin-top: 3rem;
+  }
 
-.sidebar__item_main {
-  font-weight: 700;
-}
+  &__item_main {
+    font-weight: 700;
+  }
 
-.sidebar__item_active {
-  margin-bottom: 3rem;
-}
+  &__item_active {
+    margin-bottom: 3rem;
+  }
 
-.sidebar__list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 }
 
 .article {
@@ -60,7 +59,7 @@
 
   &__list {
     margin-top: 1rem;
-    border-left: 3px solid $color-bg-light;
+    border-left: 3px solid var(--color-bg-light);
     padding-left: 1rem;
     display: flex;
     flex-direction: column;

@@ -13,12 +13,11 @@ button {
 
 .auth__button--dark {
   color: white;
-  /*В данном кейсе нет смысла в rgba ибо opacity 1 ничего не меняет */
-  background-color: rgba($color-bg-dark, 1);
+  background-color: var(--color-bg-dark);
   padding: 0.5rem 1rem 0.5rem 1rem;
   border-radius: 0.3rem;
 
   &:hover {
-    background-color: rgba($color-bg-main, 0.7);
+    background-color: rgba(var(--color-bg-main), 0.7);
   }
 }

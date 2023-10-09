@@ -15,9 +15,14 @@
     justify-content: space-between;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    background-color: $color-bg-light;
+    background-color: var(--color-bg-light);
     padding: 0.5rem 0.3rem;
   }
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -37,8 +42,8 @@
 }
 
 /* нужно сделать чтобы theme-toggle был элементом и уже ему задавать геометрию. Например, все кнопки в хедере справа можно поместить в блок header-actions и соответственно будет header-actions__toggle-theme */
-.theme-toggle {
-  margin-left: auto; // Ну тут я скорее всего нарушил БЭМ потому что задал внешнюю геометрию, но не знаю как по другому это сделать, чтобы выглядело красиво
+.header-actions__theme-toggle {
+  margin-left: auto;
 }
 
 .search-container {

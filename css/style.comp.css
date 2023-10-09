@@ -1,3 +1,4 @@
+@charset "UTF-8";
 a {
   color: black;
   text-decoration: none; }
@@ -10,11 +11,11 @@ button {
 
 .auth__button--dark {
   color: white;
-  background-color: #181717;
+  background-color: var(--color-bg-dark);
   padding: 0.5rem 1rem 0.5rem 1rem;
   border-radius: 0.3rem; }
   .auth__button--dark:hover {
-    background-color: rgba(26, 26, 26, 0.7); }
+    background-color: rgba(var(--color-bg-main), 0.7); }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -328,6 +329,13 @@ template {
   padding: 0;
   box-sizing: inherit; }
 
+:root {
+  --color-text-dark: #181717;
+  --color-bg-light: #f2f6f8;
+  --color-bg-main: #1a1a1a;
+  --color-bg-dark: #181717;
+  --color-text-light: #e6e6e6; }
+
 html {
   font-size: 62.5%; }
 
@@ -335,7 +343,8 @@ body {
   box-sizing: border-box; }
 
 .app-layout {
-  max-width: 140rem;
+  /* Когда задают размеры блока почти во всех случаях используют пиксели или проценты. rem в основном используется для текста */
+  max-width: 1400px;
   margin: 0 auto; }
 
 ul {
@@ -355,8 +364,12 @@ ul {
     justify-content: space-between;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    background-color: #f2f6f8;
+    background-color: var(--color-bg-light);
     padding: 0.5rem 0.3rem; }
+
+.header-actions {
+  display: flex;
+  align-items: center; }
 
 .logo {
   width: 15rem;
@@ -367,7 +380,8 @@ ul {
   padding-left: 3rem;
   gap: 3rem; }
 
-.theme-toggle {
+/* нужно сделать чтобы theme-toggle был элементом и уже ему задавать геометрию. Например, все кнопки в хедере справа можно поместить в блок header-actions и соответственно будет header-actions__toggle-theme */
+.header-actions__theme-toggle {
   margin-left: auto; }
 
 .search-container {
@@ -401,24 +415,19 @@ body {
   padding: 0.5rem; }
   .sidebar__icon {
     margin-right: 0.5rem; }
-
-.sidebar__input {
-  border-radius: 3rem;
-  padding: 0.3rem 0.7rem 0.3rem 0.7rem; }
-
-.sidebar__nav {
-  margin-top: 3rem; }
-
-.sidebar__item_main {
-  font-weight: 700; }
-
-.sidebar__item_active {
-  margin-bottom: 3rem; }
-
-.sidebar__list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem; }
+  .sidebar__input {
+    border-radius: 3rem;
+    padding: 0.3rem 0.7rem 0.3rem 0.7rem; }
+  .sidebar__nav {
+    margin-top: 3rem; }
+  .sidebar__item_main {
+    font-weight: 700; }
+  .sidebar__item_active {
+    margin-bottom: 3rem; }
+  .sidebar__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; }
 
 .article {
   padding: 0rem 3.5rem 0.5rem 1.5rem; }
@@ -435,7 +444,7 @@ body {
     font-weight: 500; }
   .article-aside__list {
     margin-top: 1rem;
-    border-left: 3px solid #f2f6f8;
+    border-left: 3px solid var(--color-bg-light);
     padding-left: 1rem;
     display: flex;
     flex-direction: column;
@@ -446,7 +455,10 @@ body {
   grid-template-columns: 25rem 1fr 1fr 1fr;
   row-gap: 0.5rem;
   grid-template-rows: 1fr auto;
-  background-color: #f2f6f8;
+  /*
+   Я бы советовал использовать css переменные вместо scss. Использование scss переменных оправдано в том случае, если значение используется только внутри 1 файла, чтобы избежать копипасту
+   https://www.google.com/search?sca_esv=571963393&sxsrf=AM9HkKmXmSoWWaHHysJ-4gpQFkliwYfPJQ:1696874970159&q=%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%B8%D0%B5+css+%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D1%85+%D0%BE%D1%82+sass&sa=X&ved=2ahUKEwiAiMzux-mBAxXqHBAIHU2YAn4Q7xYoAHoECA0QAQ&biw=2048&bih=1033&dpr=1.25#ip=1*/
+  background-color: var(--color-bg-light);
   padding: 0.5rem 1rem 0.5rem 1rem; }
   .footer__img {
     width: 18rem;

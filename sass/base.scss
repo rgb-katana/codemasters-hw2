@@ -6,6 +6,14 @@
   box-sizing: inherit;
 }
 
+:root {
+  --color-text-dark: #181717;
+  --color-bg-light: #f2f6f8;
+  --color-bg-main: #1a1a1a;
+  --color-bg-dark: #181717;
+  --color-text-light: #e6e6e6;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -16,7 +24,7 @@ body {
 
 .app-layout {
   /* Когда задают размеры блока почти во всех случаях используют пиксели или проценты. rem в основном используется для текста */
-  max-width: 140rem;
+  max-width: 1400px;
   margin: 0 auto;
 }
 

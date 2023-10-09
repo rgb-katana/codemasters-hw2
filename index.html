@@ -9,9 +9,9 @@
       crossorigin="anonymous"
     ></script>
     <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"
-    rel="stylesheet"
-  />
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Codemasters HW2</title>
   </head>
   <body>
@@ -47,23 +47,25 @@
               </li>
             </ul>
           </nav>
-          <div class="theme-toggle">
-            <i class="fa-solid fa-moon"></i>
-            <button class="theme-toggle__button">Theme</button>
-          </div>
-          <div class="search-container">
-            <form action="#" class="search-form">
-              <input type="text" class="search-form__input" />
-              <button class="search-form__button">
-                <i class="fa-solid fa-magnifying-glass"></i>
+          <div class="header-actions">
+            <div class="header-actions__theme-toggle theme-toggle">
+              <i class="fa-solid fa-moon"></i>
+              <button class="theme-toggle__button">Theme</button>
+            </div>
+            <div class="header-actions__search-container search-container">
+              <form action="#" class="search-form">
+                <input type="text" class="search-form__input" />
+                <button class="search-form__button">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </form>
+            </div>
+            <div class="header-actions__auth auth">
+              <button type="button" class="auth__button">Log In</button>
+              <button type="button" class="auth__button auth__button--dark">
+                Sign Up For Free
               </button>
-            </form>
-          </div>
-          <div class="auth">
-            <button type="button" class="auth__button">Log In</button>
-            <button type="button" class="auth__button auth__button--dark">
-              Sign Up For Free
-            </button>
+            </div>
           </div>
         </div>
         <div class="header__bottom">
@@ -83,7 +85,7 @@
           </button>
         </div>
       </header>
-      <div class="main">
+      <main class="main">
         <aside class="sidebar">
           <div class="sidebar__filter">
             <input type="text" class="sidebar__input" placeholder="filter" />
@@ -100,28 +102,49 @@
                 <a class="sidebar__link" href="#">HTML basics</a>
               </li>
               <li class="sidebar__item">
-                <a class="sidebar__link" href="#"><i class="fa-solid fa-play sidebar__icon fa-2xs"></i>Tutorial 1</a>
+                <a class="sidebar__link" href="#"
+                  ><i class="fa-solid fa-play sidebar__icon fa-2xs"></i>Tutorial
+                  1</a
+                >
               </li>
               <li class="sidebar__item">
-                <a class="sidebar__link" href="#"><i class="fa-solid fa-play sidebar__icon fa-2xs"></i>Tutorial 2</a>
+                <a class="sidebar__link" href="#"
+                  ><i class="fa-solid fa-play sidebar__icon fa-2xs"></i>Tutorial
+                  2</a
+                >
               </li>
               <li class="sidebar__item">
-                <a class="sidebar__link" href="#"><i class="fa-solid fa-play sidebar__icon fa-2xs"></i>Tutorial 3</a>
+                <a class="sidebar__link" href="#"
+                  ><i class="fa-solid fa-play sidebar__icon fa-2xs"></i>Tutorial
+                  3</a
+                >
               </li>
               <li class="sidebar__item sidebar__item_main">
                 <a class="sidebar__link" href="#">References</a>
               </li>
               <li class="sidebar__item">
-                <a class="sidebar__link" href="#"><i class="fa-solid fa-play sidebar__icon fa-2xs"></i>Reference 1</a>
+                <a class="sidebar__link" href="#"
+                  ><i class="fa-solid fa-play sidebar__icon fa-2xs"></i
+                  >Reference 1</a
+                >
               </li>
               <li class="sidebar__item">
-                <a class="sidebar__link" href="#"><i class="fa-solid fa-play sidebar__icon fa-2xs"></i>Reference 2</a>
+                <a class="sidebar__link" href="#"
+                  ><i class="fa-solid fa-play sidebar__icon fa-2xs"></i
+                  >Reference 2</a
+                >
               </li>
               <li class="sidebar__item">
-                <a class="sidebar__link" href="#"><i class="fa-solid fa-play sidebar__icon fa-2xs"></i>Reference 3</a>
+                <a class="sidebar__link" href="#"
+                  ><i class="fa-solid fa-play sidebar__icon fa-2xs"></i
+                  >Reference 3</a
+                >
               </li>
               <li class="sidebar__item">
-                <a class="sidebar__link" href="#"><i class="fa-solid fa-play sidebar__icon fa-2xs"></i>Reference 4</a>
+                <a class="sidebar__link" href="#"
+                  ><i class="fa-solid fa-play sidebar__icon fa-2xs"></i
+                  >Reference 4</a
+                >
               </li>
               <li class="sidebar__item sidebar__item_main">
                 <a class="sidebar__link" href="#">Guides</a>
@@ -147,32 +170,103 @@
         <article class="article">
           <section class="article__section">
             <h1 class="article__heading_1">HTML: HyperText Markup Language</h1>
-            <p class="article__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur ducimus cupiditate aliquam libero optio quibusdam eius eos! Ducimus dolor, tenetur beatae debitis corporis nostrum dolorum sint, saepe reprehenderit nobis obcaecati!</p>
-            <p class="article__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quam velit beatae ipsa facilis dolorum pariatur sint cum quibusdam iste. In unde est quas ad!</p>
-            <p class="article__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente illum animi ducimus qui ab blanditiis dignissimos iure aliquam, optio laudantium nulla possimus cum tempora. Reiciendis officia iusto perspiciatis illum tenetur. Exercitationem enim eligendi quisquam quaerat sapiente, molestias, ipsam minima porro in illum unde architecto inventore!</p>
-            <p class="article__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae nam laudantium, corrupti repudiandae amet rerum vero illo odio animi doloremque.</p>
-            <p class="article__paragraph">Lorem ipsum dolor sit amet consectetur.</p>
+            <p class="article__paragraph">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Consectetur ducimus cupiditate aliquam libero optio quibusdam eius
+              eos! Ducimus dolor, tenetur beatae debitis corporis nostrum
+              dolorum sint, saepe reprehenderit nobis obcaecati!
+            </p>
+            <p class="article__paragraph">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
+              quam velit beatae ipsa facilis dolorum pariatur sint cum quibusdam
+              iste. In unde est quas ad!
+            </p>
+            <p class="article__paragraph">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
+              illum animi ducimus qui ab blanditiis dignissimos iure aliquam,
+              optio laudantium nulla possimus cum tempora. Reiciendis officia
+              iusto perspiciatis illum tenetur. Exercitationem enim eligendi
+              quisquam quaerat sapiente, molestias, ipsam minima porro in illum
+              unde architecto inventore!
+            </p>
+            <p class="article__paragraph">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
+              nam laudantium, corrupti repudiandae amet rerum vero illo odio
+              animi doloremque.
+            </p>
+            <p class="article__paragraph">
+              Lorem ipsum dolor sit amet consectetur.
+            </p>
           </section>
           <section class="article__section">
             <h2 class="article__heading_2">Key resources</h2>
-            <p class="article__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur totam labore aperiam.</p>
-            <p class="article__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat facere velit illum in quo optio, vitae animi sapiente ipsa esse aut earum at porro natus unde.</p>
-            <p class="article__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi illo consequuntur fuga ab asperiores error culpa itaque rerum, repellat est?</p>
-            <p class="article__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae nam laudantium, corrupti repudiandae amet rerum vero illo odio animi doloremque.</p>
+            <p class="article__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur totam labore aperiam.
+            </p>
+            <p class="article__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              facere velit illum in quo optio, vitae animi sapiente ipsa esse
+              aut earum at porro natus unde.
+            </p>
+            <p class="article__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              illo consequuntur fuga ab asperiores error culpa itaque rerum,
+              repellat est?
+            </p>
+            <p class="article__paragraph">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
+              nam laudantium, corrupti repudiandae amet rerum vero illo odio
+              animi doloremque.
+            </p>
           </section>
           <section class="article__section">
             <h2 class="article__heading_2">Beginners tutorials</h2>
-            <p class="article__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, facilis!</p>
-            <p class="article__paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore corrupti dolores veniam sit possimus. Ducimus illum molestias adipisci laudantium architecto.</p>
-            <p class="article__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit natus ipsam nostrum eos ipsa blanditiis cumque magnam veritatis ad quis.</p>
-            <p class="article__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus illo sit, error corporis sequi magni iure perferendis voluptas molestiae possimus. Provident praesentium est cumque officiis blanditiis magni. Odit aliquid animi provident, autem amet inventore quo similique consectetur?</p>
+            <p class="article__paragraph">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore,
+              facilis!
+            </p>
+            <p class="article__paragraph">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
+              corrupti dolores veniam sit possimus. Ducimus illum molestias
+              adipisci laudantium architecto.
+            </p>
+            <p class="article__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+              natus ipsam nostrum eos ipsa blanditiis cumque magnam veritatis ad
+              quis.
+            </p>
+            <p class="article__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+              illo sit, error corporis sequi magni iure perferendis voluptas
+              molestiae possimus. Provident praesentium est cumque officiis
+              blanditiis magni. Odit aliquid animi provident, autem amet
+              inventore quo similique consectetur?
+            </p>
           </section>
           <section class="article__section">
             <h2 class="article__heading_2">Advanced topics</h2>
-            <p class="article__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-            <p class="article__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, accusamus cumque non delectus dolore molestiae?</p>
-            <p class="article__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum esse aut, voluptatum dolorem totam minus? Aliquam quidem est molestias adipisci. In officia possimus molestiae, esse repudiandae ipsum minima et velit laboriosam ea non sed dolor dolore eaque nesciunt libero vero.</p>
-            <p class="article__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, fuga. Possimus suscipit iure autem ipsa ex eligendi eos omnis laboriosam veniam exercitationem, voluptate, dolorem rerum incidunt dolore similique minima nisi. Repellendus ipsum delectus eos alias!</p>
+            <p class="article__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipisicing.
+            </p>
+            <p class="article__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse,
+              accusamus cumque non delectus dolore molestiae?
+            </p>
+            <p class="article__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum
+              esse aut, voluptatum dolorem totam minus? Aliquam quidem est
+              molestias adipisci. In officia possimus molestiae, esse
+              repudiandae ipsum minima et velit laboriosam ea non sed dolor
+              dolore eaque nesciunt libero vero.
+            </p>
+            <p class="article__paragraph">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio,
+              fuga. Possimus suscipit iure autem ipsa ex eligendi eos omnis
+              laboriosam veniam exercitationem, voluptate, dolorem rerum
+              incidunt dolore similique minima nisi. Repellendus ipsum delectus
+              eos alias!
+            </p>
           </section>
         </article>
         <aside class="article-aside">
@@ -194,19 +288,27 @@
             </ul>
           </nav>
         </aside>
-      </main> <!--Нет открывающего тега main-->
-    </div>
-    <footer class="footer">
-      <div class="footer__logo">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/MDN_Web_Docs.svg" alt="mdn logo" class="footer__img">
-        <p class="footer__slogan">Your blueprint for a better internet</p>
-      </div>
-      <a href="#" class="footer__link">MDN</a>
-      <a href="#" class="footer__link">Support</a>
-      <a href="#" class="footer__link">Developers</a>
-      <div class="footer__legal">
-        <p class="footer__text">Portions of this content are ©1998–2023 by individual mozilla.org contributors.</p>
+      </main>
+      <!--Нет открывающего тега main-->
+      <footer class="footer">
+        <div class="footer__logo">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/9/98/MDN_Web_Docs.svg"
+            alt="mdn logo"
+            class="footer__img"
+          />
+          <p class="footer__slogan">Your blueprint for a better internet</p>
+        </div>
+        <a href="#" class="footer__link">MDN</a>
+        <a href="#" class="footer__link">Support</a>
+        <a href="#" class="footer__link">Developers</a>
+        <div class="footer__legal">
+          <p class="footer__text">
+            Portions of this content are ©1998–2023 by individual mozilla.org
+            contributors.
+          </p>
           <!--Не хватает закрывающего тега-->
+        </div>
       </footer>
     </div>
   </body>
