@@ -67,10 +67,22 @@
               </button>
             </div>
           </div>
+          <!-- Сюда вставил svg с кнопкой для меню  -->
+          <div class="hamburger-menu">
+            <button type="button">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
         </div>
         <div class="header__bottom">
+          <!-- Здесь у них примерно когда 770px появляется кнопка для того чтобы показать сайдбар-->
           <nav class="navigation-history">
             <ul class="navigation-history__list">
+              <li class="navigation-history__item">
+                <span class="button-wrap">
+                  <i class="fa-solid fa-layer-group"></i>
+                </span>
+              </li>
               <li class="navigation-history__item">
                 <a href="" class="navigation-history__link">References</a>
               </li>
@@ -89,6 +101,26 @@
         <aside class="sidebar">
           <div class="sidebar__filter">
             <input type="text" class="sidebar__input" placeholder="filter" />
+          </div>
+          <!-- Я сюда захардкодил блок IN THIS ARTICLE, потому что в MDN он из правой части сайта перемещается в левую, и получается что я не могу так сделать просто с scss, либо я просто пока не знаю как это сделать -->
+          <div class="article-aside article-aside--responsive">
+            <h2 class="article-aside__heading">In this article</h2>
+            <nav class="article-aside__nav">
+              <ul class="article-aside__list">
+                <li class="article-aside__item">
+                  <a href="" class="article-aside__link">HTML language</a>
+                </li>
+                <li class="article-aside__item">
+                  <a href="" class="article-aside__link">Key resources</a>
+                </li>
+                <li class="article-aside__item">
+                  <a href="" class="article-aside__link">Beginners tutorials</a>
+                </li>
+                <li class="article-aside__item">
+                  <a href="" class="article-aside__link">Advanced topics</a>
+                </li>
+              </ul>
+            </nav>
           </div>
           <nav class="sidebar__nav">
             <ul class="sidebar__list">
@@ -289,7 +321,6 @@
           </nav>
         </aside>
       </main>
-      <!--Нет открывающего тега main-->
       <footer class="footer">
         <div class="footer__logo">
           <img
@@ -299,15 +330,16 @@
           />
           <p class="footer__slogan">Your blueprint for a better internet</p>
         </div>
-        <a href="#" class="footer__link">MDN</a>
-        <a href="#" class="footer__link">Support</a>
-        <a href="#" class="footer__link">Developers</a>
+        <div class="footer__links">
+          <a href="#" class="footer__link">MDN</a>
+          <a href="#" class="footer__link">Support</a>
+          <a href="#" class="footer__link">Developers</a>
+        </div>
         <div class="footer__legal">
           <p class="footer__text">
             Portions of this content are ©1998–2023 by individual mozilla.org
             contributors.
           </p>
-          <!--Не хватает закрывающего тега-->
         </div>
       </footer>
     </div>

@@ -1,3 +1,5 @@
+@import './mixins';
+
 .header {
   display: flex;
   flex-direction: column;
@@ -29,7 +31,9 @@
   width: 15rem;
   height: 4rem;
 
-  &__img {
+  @include respond(tab-port) {
+    width: 12rem;
+    padding: 0.5rem;
   }
 }
 
@@ -39,11 +43,20 @@
     padding-left: 3rem;
     gap: 3rem;
   }
+
+  @include respond(tab-port) {
+    display: none;
+  }
 }
 
-/* нужно сделать чтобы theme-toggle был элементом и уже ему задавать геометрию. Например, все кнопки в хедере справа можно поместить в блок header-actions и соответственно будет header-actions__toggle-theme */
-.header-actions__theme-toggle {
-  margin-left: auto;
+.header-actions {
+  @include respond(tab-port) {
+    display: none;
+  }
+
+  &__theme-toggle {
+    margin-left: auto;
+  }
 }
 
 .search-container {
@@ -52,6 +65,11 @@
 }
 
 .navigation-history {
+  &__item {
+    @include respond(phone) {
+      padding-left: 1rem;
+    }
+  }
   &__list {
     display: flex;
     gap: 1rem;
@@ -68,5 +86,22 @@
     width: 8rem;
     border-radius: 3rem;
     padding: 0.3rem 0.7rem 0.3rem 0.7rem;
+  }
+}
+
+.hamburger-menu {
+  display: none;
+
+  @include respond(tab-port) {
+    display: block;
+    padding-right: 1.5rem;
+  }
+}
+
+.button-wrap {
+  display: none;
+
+  @include respond(phone) {
+    display: inline;
   }
 }
