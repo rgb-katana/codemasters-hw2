@@ -5,13 +5,13 @@
   flex-direction: column;
   width: 100%;
 
-  &__top {
+  &__nav-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  &__bottom {
+  &__history-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -20,26 +20,21 @@
     background-color: var(--color-bg-light);
     padding: 0.5rem 0.3rem;
   }
+
+  &__logo {
+    width: 15rem;
+    height: 4rem;
+
+    @include respond(tab-port) {
+      width: 12rem;
+      padding: 0.5rem;
+    }
+  }
 }
 
 .header-actions {
   display: flex;
   align-items: center;
-}
-
-.logo {
-  /*БЭМ блоку нельзя задавать внешнюю геометрию, отступы, способ позиционирования и тп.
-  Суть блока в том, что если его скопипастить в любое другое место, он встанет и не сломает вёрстку.
-  В данном  же случае, если его вставить куда-нибудь он будет  всегда фиксированного размера, а следовательно если контейнер будет меньшего размера,  вёрстка сломается.
-  Вместо этого, надо создать БЭМ элемент в том месте где у тебя этот класс находится размеры.
-   Это относится не только к этому коду,а еще и к другим местам, с аналогичной проблемой*/
-  width: 15rem;
-  height: 4rem;
-
-  @include respond(tab-port) {
-    width: 12rem;
-    padding: 0.5rem;
-  }
 }
 
 .top-navigation {

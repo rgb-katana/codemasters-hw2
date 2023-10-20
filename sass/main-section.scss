@@ -11,6 +11,10 @@
   @include respond(phone) {
     grid-template-columns: 1fr;
   }
+
+  &__article-aside {
+    margin-top: 2.5rem;
+  }
 }
 
 .sidebar {
@@ -67,23 +71,16 @@
     margin-bottom: 1.3rem;
   }
 
-  /* Это надо делать через модификаторы. Создается модификатор элемента и добавляется везде где нужно*/
-  &__section:not(:first-child) {
-    margin-top: 2rem;
+  &__section_margin-bottom_10 {
+    margin-bottom: 10px;
   }
 
-  &__section:last-child {
-    margin-bottom: 1rem;
-  }
-
-  &__paragraph:not(:last-child) {
-    margin-bottom: 1rem;
+  &__section_margin-bottom_20 {
+    margin-bottom: 20px;
   }
 }
 
 .article-aside {
-  margin-top: 2.5rem;
-
   @include respond(tab-land) {
     display: none;
   }

@@ -17,12 +17,8 @@
   <body>
     <div class="app-layout">
       <header class="header">
-      <!--
-      Бэм применен хорошо, с неймингом небольшие проблемы.
-      Название элемента характеризует смысл («что это?» — «пункт»: item, «текст»: text), а не состояние («какой, как выглядит?» — «красный»: red, «большой»: big).
-       -->
-        <div class="header__top">
-          <div class="logo">
+        <div class="header__nav-section">
+          <div class="logo header__logo">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/d/d2/MDN_Web_Docs_logo.svg"
               alt="logo"
@@ -73,12 +69,12 @@
           </div>
           <!-- Сюда вставил svg с кнопкой для меню  -->
           <div class="hamburger-menu">
-            <button type="button">
+            <button type="button" class="hamburger-menu__button">
               <i class="fa-solid fa-bars"></i>
             </button>
           </div>
         </div>
-        <div class="header__bottom">
+        <div class="header__history-section">
           <!-- Здесь у них примерно когда 770px появляется кнопка для того чтобы показать сайдбар-->
           <nav class="navigation-history">
             <ul class="navigation-history__list">
@@ -107,7 +103,9 @@
             <input type="text" class="sidebar__input" placeholder="filter" />
           </div>
           <!-- Я сюда захардкодил блок IN THIS ARTICLE, потому что в MDN он из правой части сайта перемещается в левую, и получается что я не могу так сделать просто с scss, либо я просто пока не знаю как это сделать -->
-          <div class="article-aside article-aside--responsive">
+          <div
+            class="main__article-aside article-aside article-aside--responsive"
+          >
             <h2 class="article-aside__heading">In this article</h2>
             <nav class="article-aside__nav">
               <ul class="article-aside__list">
@@ -204,7 +202,7 @@
           </nav>
         </aside>
         <article class="article">
-          <section class="article__section">
+          <section class="article__section article__section_margin-bottom_10">
             <h1 class="article__heading_1">HTML: HyperText Markup Language</h1>
             <p class="article__paragraph">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -234,7 +232,7 @@
               Lorem ipsum dolor sit amet consectetur.
             </p>
           </section>
-          <section class="article__section">
+          <section class="article__section article__section_margin-bottom_10">
             <h2 class="article__heading_2">Key resources</h2>
             <p class="article__paragraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -256,7 +254,7 @@
               animi doloremque.
             </p>
           </section>
-          <section class="article__section">
+          <section class="article__section article__section_margin-bottom_10">
             <h2 class="article__heading_2">Beginners tutorials</h2>
             <p class="article__paragraph">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore,
@@ -280,7 +278,7 @@
               inventore quo similique consectetur?
             </p>
           </section>
-          <section class="article__section">
+          <section class="article__section article__section_margin-bottom_20">
             <h2 class="article__heading_2">Advanced topics</h2>
             <p class="article__paragraph">
               Lorem ipsum dolor sit amet, consectetur adipisicing.
@@ -305,7 +303,7 @@
             </p>
           </section>
         </article>
-        <aside class="article-aside">
+        <aside class="main__article-aside article-aside">
           <h2 class="article-aside__heading">In this article</h2>
           <nav class="article-aside__nav">
             <ul class="article-aside__list">
